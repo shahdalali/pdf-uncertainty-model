@@ -10,14 +10,14 @@ By testing parameter recovery across two types of physical processes (**Deep Ine
 ## Physics and Statistical Methodology
 
 ### 1. Valence PDF Parametrisation
-Both valence distributions follow a standard phenomenological parametrisation normalised via numerical integration (`scipy.integrate.quad`) to satisfy quark number sum rules $`(\(\int_0^1 u_v(x)\,dx = 2\) and \(\int_0^1 d_v(x)\,dx = 1\))`$:
+Both valence distributions follow a standard phenomenological parametrisation normalised via numerical integration (`scipy.integrate.quad`) to satisfy quark number sum rules $`(\int_0^1 u_v(x)\,dx = 2`$ and $`\int_0^1 d_v(x)\,dx = 1)`$:
 
 $$\[q_v(x) = A_q x^{a_q} (1 - x)^{b_q} \left(1 + c_1 \sqrt{x} + c_2 x\right)\]$$
 
 ### 2. Simulated Observables
 Synthetic datasets are generated using known parameters with 2% Gaussian multiplicative noise:
 * **Deep Inelastic Scattering (DIS):** Simulates proton $`(F_2^p)`$ and neutron $`(F_2^n)`$ structure functions across $`x \in [0.01, 0.99]`$.
-* **Drell-Yan (DY) Process:** Simulates differential cross-sections (dσ/dM) mediated by virtual photon $`(\gamma^*)`$ and Z-boson exchange at $`\sqrt{s} = 100\text{ GeV}`$ and M = 10 GeV across $`x_1 \in [0.08, 0.95]`$.
+* **Drell-Yan (DY) Process:** Simulates differential cross-sections $`(d\sigma/dM)`$ mediated by virtual photon $`(\gamma^*)`$ and Z-boson exchange at $`\sqrt{s} = 100\text{ GeV}`$ and $`M = 10`$ GeV across $`x_1 \in [0.08, 0.95]`$.
 
 ### 3. Parameter Fitting and Uncertainty Propagation
 Best-fit parameters are obtained via bounded χ² minimisation using `L-BFGS-B`. Uncertainties are propagated to the PDFs using two different approaches:
@@ -53,7 +53,7 @@ Best-fit parameters are obtained via bounded χ² minimisation using `L-BFGS-B`.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/shahdalali/pdf-uncertainty-model.git
    cd pdf-uncertainty-model
    ```
 
@@ -81,10 +81,10 @@ python drell-yan/mc/main.py
 ```
 
 ### Outputs
-Running a script outputs parameter recovery estimates (for Monte Carlo runs) and generates three diagnostic plots:
+Running a script outputs parameter recovery estimates (for Monte Carlo runs) and generates multiple diagnostic plots:
 1. **Observable Fit:** Synthetic data with error bars overlaid against the best-fit structure function or differential cross-section.
 2. **Valence PDFs:** Reconstructed $u_v(x)$ and $d_v(x)$ distributions with $1\sigma$ uncertainty bands.
-3. **Relative Fractional Uncertainty:** Log-scale comparison of $\delta q_v(x) / q_v(x)$ to highlight kinematic regions where data constraints weaken (such as low-$x$ and high-$x$ extrapolations).
+3. **Relative Fractional Uncertainty:** Log-scale comparison of $\delta q_v(x) / q_v(x)$ to highlight kinematic regions where data constraints weaken (such as low-$`x`$ and high-$`x`$ extrapolations).
 
 ---
 
