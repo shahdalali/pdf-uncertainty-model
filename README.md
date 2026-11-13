@@ -89,12 +89,12 @@ Running a script outputs parameter recovery estimates (for Monte Carlo runs) and
 ---
 
 ## Key Observations and Limitations
--**Linear vs. Non-Linear Error Propagation:** The Hessian approximation assumes a quadratic $\chi^2$ minimum, whereas Monte Carlo bootstrapping captures non-linear parameter correlations and boundary effects without relying on finite-difference step sizes.
--**Kinematic Coverage:** In Drell-Yan simulations at fixed invariant mass $M$ and $\sqrt{s}$, kinematic cuts on $x_2 = M^2 / (x_1 s)$ restrict phase space, increasing fractional uncertainties at extreme $x$ values compared to full-range DIS data.
--**Future Extensions:** Incorporating real experimental datasets (e.g., HERA, LHC), DGLAP $Q^2$-evolution, and sea-quark/gluon distributions.
+* The Hessian approximation assumes a quadratic $\chi^2$ minimum, whereas Monte Carlo bootstrapping is able to capture non-linear parameter correlations and boundary effects without relying on finite-difference step sizes.
+* In Drell-Yan simulations at fixed invariant mass $M$ and $\sqrt{s}$, kinematic cuts on $x_2 = M^2 / (x_1 s)$ restrict phase space, increasing fractional uncertainties at extreme $x$ values compared to full-range Deep Inelastic Scattering data.
+* Potential Future Directions: Incorporating real experimental datasets (e.g., HERA, LHC), DGLAP $Q^2$-evolution, and sea-quark/gluon distributions.
 
 ---
 
 ## Acknowledgements
-* Supervised by **Prof. R. S. Thorne** at **University College London**.
-* Built using standard scientific Python libraries (`NumPy`, `SciPy`, `Matplotlib`).
+Supervised by **Prof. R. S. Thorne** at **University College London**.\
+Built using standard scientific Python libraries (`NumPy`, `SciPy`, `Matplotlib`).
