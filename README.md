@@ -1,5 +1,5 @@
 # pdf-uncertainty-model
-Master's thesis code comparing the Hessian matrix method and Monte Carlo method as used in estimating uncertainties in Parton Distribution Functions.
+Master's thesis code comparing the Hessian matrix method to the Monte Carlo method as used in estimating uncertainties in Parton Distribution Functions.
 ## Overview
 This repository contains the simulation and statistical inference pipeline for my Master's thesis in theoretical particle physics. The project extracts **up ($`u_v`$) and down ($`d_v`$) valence quark Parton Distribution Functions (PDFs)** from synthetic collider data and compares two standard uncertainty quantification methods, the **Hessian eigenvector method** and **Monte Carlo (MC) bootstrapping method**.
 
